@@ -1,0 +1,6 @@
+[project]
+name = "speechscore-stt-eval"
+version = "0.1.0"
+description = "A transcript evaluation harness with word alignment, micro-averaged WER, CER and per-language breakdowns."
+requires-python = ">=3.11"
+dependencies = []

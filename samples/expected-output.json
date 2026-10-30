@@ -1,0 +1,162 @@
+{
+  "overall": {
+    "segments": 4,
+    "reference_words": 16,
+    "word_errors": 3,
+    "wer": 0.1875,
+    "cer": 0.20833333333333334,
+    "latency_p50_ms": 310,
+    "latency_p95_ms": 450
+  },
+  "by_language": {
+    "en": {
+      "segments": 3,
+      "reference_words": 11,
+      "word_errors": 3,
+      "wer": 0.2727272727272727,
+      "cer": 0.30612244897959184,
+      "latency_p50_ms": 340,
+      "latency_p95_ms": 450
+    },
+    "es": {
+      "segments": 1,
+      "reference_words": 5,
+      "word_errors": 0,
+      "wer": 0.0,
+      "cer": 0.0,
+      "latency_p50_ms": 310,
+      "latency_p95_ms": 310
+    }
+  },
+  "segments": [
+    {
+      "id": "en-001",
+      "language": "en",
+      "reference_words": 5,
+      "reference_chars": 25,
+      "word_errors": 1,
+      "char_errors": 7,
+      "latency_ms": 280,
+      "alignment": [
+        {
+          "op": "equal",
+          "reference": "book",
+          "hypothesis": "book"
+        },
+        {
+          "op": "equal",
+          "reference": "a",
+          "hypothesis": "a"
+        },
+        {
+          "op": "equal",
+          "reference": "visit",
+          "hypothesis": "visit"
+        },
+        {
+          "op": "equal",
+          "reference": "tomorrow",
+          "hypothesis": "tomorrow"
+        },
+        {
+          "op": "delete",
+          "reference": "morning",
+          "hypothesis": null
+        }
+      ]
+    },
+    {
+      "id": "en-002",
+      "language": "en",
+      "reference_words": 6,
+      "reference_chars": 24,
+      "word_errors": 1,
+      "char_errors": 3,
+      "latency_ms": 340,
+      "alignment": [
+        {
+          "op": "equal",
+          "reference": "please",
+          "hypothesis": "please"
+        },
+        {
+          "op": "equal",
+          "reference": "connect",
+          "hypothesis": "connect"
+        },
+        {
+          "op": "equal",
+          "reference": "me",
+          "hypothesis": "me"
+        },
+        {
+          "op": "equal",
+          "reference": "to",
+          "hypothesis": "to"
+        },
+        {
+          "op": "substitute",
+          "reference": "a",
+          "hypothesis": "the"
+        },
+        {
+          "op": "equal",
+          "reference": "person",
+          "hypothesis": "person"
+        }
+      ]
+    },
+    {
+      "id": "es-001",
+      "language": "es",
+      "reference_words": 5,
+      "reference_chars": 23,
+      "word_errors": 0,
+      "char_errors": 0,
+      "latency_ms": 310,
+      "alignment": [
+        {
+          "op": "equal",
+          "reference": "buenos",
+          "hypothesis": "buenos"
+        },
+        {
+          "op": "equal",
+          "reference": "días",
+          "hypothesis": "días"
+        },
+        {
+          "op": "equal",
+          "reference": "quiero",
+          "hypothesis": "quiero"
+        },
+        {
+          "op": "equal",
+          "reference": "una",
+          "hypothesis": "una"
+        },
+        {
+          "op": "equal",
+          "reference": "cita",
+          "hypothesis": "cita"
+        }
+      ]
+    },
+    {
+      "id": "silence-001",
+      "language": "en",
+      "reference_words": 0,
+      "reference_chars": 0,
+      "word_errors": 1,
+      "char_errors": 5,
+      "latency_ms": 450,
+      "alignment": [
+        {
+          "op": "insert",
+          "reference": null,
+          "hypothesis": "hello"
+        }
+      ]
+    }
+  ]
+}
